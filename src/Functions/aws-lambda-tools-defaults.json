@@ -6,12 +6,14 @@
     "All the command line options for the Lambda command can be specified in this file."
   ],
   "profile": "",
-  "region": "",
+  "region": "eu-central-1",
   "configuration": "Release",
+  "function-name": "gettenant",
   "function-architecture": "arm64",
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
   "function-handler": "Function",
+  "environment-variables": "ANNOTATIONS_HANDLER=FunctionHandler",
   "msbuild-parameters": "--self-contained true"
 }

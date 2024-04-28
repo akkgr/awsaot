@@ -18,7 +18,7 @@ public class FunctionTest
     {
         var context = new TestLambdaContext();
         mock.Setup(p => p.GetTenant(It.IsAny<string>(), It.IsAny<CancellationToken>()))
-            .ReturnsAsync(new TenantDao
+            .ReturnsAsync(new Tenant
             {
                 Id = "1234",
                 Name = "Hello World"
